@@ -1,0 +1,13 @@
+# pig latin translator. A simple translator converting any word entered into pig latin. "igpay atinlay"
+pyg = 'ay'
+
+original = raw_input('Enter a word:')
+
+if len(original) > 0 and original.isalpha():
+    word = original.lower()
+    first = word[0]
+    part_word = word + first + pyg
+    new_word = part_word[1:len(part_word)]
+    print new_word
+else:
+    print 'no igpay atinlay for you'
